@@ -45,10 +45,12 @@ class Battle {
         return Math.floor(Math.floor(Math.floor((2 * this.firstPokemon.level) / (5 + 2)) * atk * move.power / def) / 50) + 2;
       }
 
-      dealDamage(): void 
+      attack(defender:Pokemon, move:Move): void 
       {
-          
+          let damage = this.calculateDamage(move);
+          defender.hp = defender.hp - damage;
       }
+
 }
 
 export { Battle };
