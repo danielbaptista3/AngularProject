@@ -1,6 +1,8 @@
-var pokemon = /** @class */ (function () {
-    function pokemon(name) {
+var Pokemon = /** @class */ (function () {
+    function Pokemon(name) {
         this.name = name;
     }
-    return pokemon;
+    return Pokemon;
 }());
+var pikachu = new Pokemon("Pikachu");
+console.log(pikachu.name);

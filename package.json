@@ -4,7 +4,7 @@
   "description": "",
   "main": "pokemon.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "tsc pokemon.ts && node pokemon.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
